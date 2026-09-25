@@ -1,0 +1,77 @@
+name: MEG-M1-A2B-2026
+# d'après l'env `template-R-SC-2026`
+# adapté de Scaburet/template-R-SC-2026, qui est le template ok pour avoir Rstudio sur uracile après maj Plasma
+# Ajout des outils bash utilisés pour le pipeline RNAseq de l'UE A2B du M1 MEG - UPC
+# 10/07/2026
+
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+  
+dependencies:
+  # Jupyter dependencies
+  - jupyterhub>=4.1,<5
+  - jupyterlab>=4.0,<5
+  - notebook>=7,<8
+  - jupyter_server>=2,<3
+  - jupyter-server-proxy>=4.1,<4.2
+  - jupyter-resource-usage
+  - jupyterlab-topbar-text    # affiche le nom de l'environnement à droite dans la topbar
+  - nodejs
+  - nbresuse
+  - libgomp
+  
+  # Jupyter archive
+  # https://github.com/jupyterlab-contrib/jupyter-archive
+  - jupyter-archive
+  # JupyterLab git
+  # https://github.com/jupyterlab/jupyterlab-git
+  - jupyterlab-git
+
+  # Bash environment
+  - bash_kernel
+
+  # RStudio proxy (nécessaire pour afficher RStudio dans JupyterLab)
+  - jupyter-rsession-proxy==2.3.0   
+  
+  # Python environment
+  - python=3.10
+  - pip
+  - pip:
+    - watermark
+    # - man-db
+
+  # For the M1 A2B course (unix part)
+  - fastqc
+  - multiqc
+  - fastp
+  - star
+  - salmon
+  - samtools
+  - qualimap
+  - subread
+
+
+  # R environment (version for Ubuntu 24.04)
+  - r-irkernel
+  - r-base>=4
+
+  # R packages for the M1 A2B course:
+  - r-essentials                  
+  - r-tidyverse                                       
+  - r-markdown
+  - r-rcpp
+  - r-readxl
+  - r-writexl
+  - r-openxlsx
+  - r-factominer
+  - r-dt
+  - r-corrplot
+  - r-rpart
+  - r-rpart.plot
+  - r-biocManager                 # Bioconductor package manager
+  - r-pheatmap
+  #- r-knitr
+  #- r-rmarkdown
+  
