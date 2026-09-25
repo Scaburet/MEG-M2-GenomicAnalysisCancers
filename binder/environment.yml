@@ -1,8 +1,8 @@
-name: MEG-M1-A2B-2026
-# d'après l'env `template-R-SC-2026`
+name: MEG-M2-GenomicsAnalysisCancers
+# d'après l'env `MEG-M1-A2B-2026`
 # adapté de Scaburet/template-R-SC-2026, qui est le template ok pour avoir Rstudio sur uracile après maj Plasma
 # Ajout des outils bash utilisés pour le pipeline RNAseq de l'UE A2B du M1 MEG - UPC
-# 10/07/2026
+# 25/09/2026
 
 channels:
   - conda-forge
@@ -40,24 +40,14 @@ dependencies:
   - pip
   - pip:
     - watermark
-    # - man-db
-
-  # For the M1 A2B course (unix part)
-  - fastqc
-  - multiqc
-  - fastp
-  - star
-  - salmon
-  - samtools
-  - qualimap
-  - subread
+    - matplotlib
 
 
   # R environment (version for Ubuntu 24.04)
   - r-irkernel
   - r-base>=4
 
-  # R packages for the M1 A2B course:
+  # R packages for the M2 GAC course:
   - r-essentials                  
   - r-tidyverse                                       
   - r-markdown
@@ -66,12 +56,16 @@ dependencies:
   - r-writexl
   - r-openxlsx
   - r-factominer
+  - r-factoextra
   - r-dt
+  - r-rcolorbrewer
+  - r-gplots
   - r-corrplot
   - r-rpart
   - r-rpart.plot
   - r-biocManager                 # Bioconductor package manager
-  - r-pheatmap
-  #- r-knitr
-  #- r-rmarkdown
+  - r-statmod
+  - r-ggfortify
+  - r-ranger
+  - r-repr
   
