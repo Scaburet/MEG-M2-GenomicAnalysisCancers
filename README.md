@@ -1,10 +1,9 @@
 # UE M2 GAC - Environnement mis à jour pour 2026
 
 Environment for Fabien Fauchereau in his M2 course "Genomic Analysis of Cancers" for the European Master of Genetics. Three hands-on:
-
-    Hierarchical Clustering (hclust)
-    Principal Component Analysis (PCA)
-    Survival Analysis
+ - Hierarchical Clustering (hclust)
+ - Principal Component Analysis (PCA)
+ - Survival Analysis
 
 R scripts are already included for the M2 course.
 
