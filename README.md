@@ -9,7 +9,7 @@ R scripts are already included for the M2 course.
 
 ## Try it on Binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://github.com/Scaburet/MEG-M2-GenomicAnalysisCancers/tree/master/master?urlpath=%2Flab/) Jupyter + R kernel
+[![Binder](https://mybinder.org/badge_logo.svg)](https://github.com/Scaburet/MEG-M2-GenomicAnalysisCancers/master?urlpath=%2Flab/) Jupyter + R kernel
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Scaburet/MEG-M2-GenomicAnalysisCancers/master?urlpath=rstudio) RStudio
 
